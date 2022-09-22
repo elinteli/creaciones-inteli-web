@@ -1,6 +1,7 @@
 body{
 background-color: #3f1d84;
-font-family: 'Calibri';
+font-family: Calibri, sans-serif;
+
 font-size: 16px;
 box-sizing: border-box;
 }
@@ -11,7 +12,8 @@ font-family: 'Yantramanav', sans-serif;
 }
 
 .inicio{
-height: auto; background: url('Recursos/fondo.jpg');
+height: auto;
+background: url('Recursos/fondo.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 }

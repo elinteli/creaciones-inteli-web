@@ -1,12 +1,12 @@
 .header img{
 float: left;
-width: 200px;
-padding: 10px;
+width: 12.5em;
+padding: 0.625em;
 background-color: #d8dad5;
 }
 
 .header{
-height: 4.4em;
+height: 4.5em;
 }
 
 
@@ -21,9 +21,9 @@ height: 4.4em;
   float: left;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.875em 1em;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.0625em;
   color: black;
   font-weight: 300;
 }
@@ -41,7 +41,7 @@ height: 4.4em;
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -49,7 +49,7 @@ height: 4.4em;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
