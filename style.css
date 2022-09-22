@@ -1,6 +1,6 @@
 body{
 background-color: #3f1d84;
-font-family: 'Rubik', sans-serif;
+font-family: sans-serif;
 font-size: 16px;
 box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ background-color: #212121
 }
 
 .titulo{
-letter-spacing: -1px;
+letter-spacing: -2.5px;
 clear: left;
 text-align: center;
 }
@@ -38,7 +38,7 @@ background-color: #3f1d84;
 .inicio .titulo{
 background-color: #d8dad5;
 align-content: center;
-width: 650px;
+width: 40.625em;
 max-width: 70%;
 margin: auto;
 }
@@ -57,19 +57,18 @@ color: black;
 
 .boton a:hover{
 color: white;
-padding: 0.3em;
-padding-left: 3em;
-padding-right: 3em;
 background-color: #3f1d84;
-border-radius: 0.2em;
 border: 0.1em solid white
+}
+
+.boton{
+text-align: center;
 }
 
 .boton a{
 color: #3f1d84;
-padding: 0.3em;
-padding-left: 3em;
-padding-right: 3em;
+padding: 0.3em 3vw;
+max-width: 90%;
 background-color: white;
 border-radius: 0.2em;
 border: 0.1em solid white
