@@ -35,6 +35,14 @@ font-size: 1.6em;
 background-color: #3f1d84;
 }
 
+.inicio .titulo{
+background-color: #d8dad5;
+align-content: center;
+width: 650px;
+max-width: 70%;
+margin: auto;
+}
+
 .inicio .titulo b{
 font-family: 'Rubik';
 color: #3f1d84;
