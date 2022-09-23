@@ -26,6 +26,7 @@ height: 4.5em;
   font-size: 1.0625em;
   color: black;
   font-weight: 300;
+  transition: .3s;
 }
 
 .topnav a:hover {
@@ -34,7 +35,8 @@ height: 4.5em;
 }
 
 .topnav a.active {
- font-weight: 400;
+
+   text-decoration: underline;
 }
 
 .topnav .icon {

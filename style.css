@@ -5,6 +5,10 @@ font-size: 16px;
 box-sizing: border-box;
 }
 
+hr{
+color: #d8dad5;
+}
+
 .header{
 font-family: 'Yantramanav', sans-serif;
  background-color: #d8dad5;
@@ -23,11 +27,17 @@ background-color: #212121
 }
 
 .titulo{
-font-family: 'Yantramanav';
+font-family: 'Yantramanav', sans-serif;
 letter-spacing: -2px;
 clear: left;
 text-align: center;
 font-weight: 500;
+border-radius: 20px;
+}
+
+.titulo span{
+color: #212121;
+background: #fdd33d;
 }
 
 .fondonegro .titulo b{
@@ -40,8 +50,9 @@ background-color: #3f1d84;
 background-color: #d8dad5;
 align-content: center;
 width: 40.625em;
-max-width: 70%;
+max-width: 90%;
 margin: auto;
+padding: 1px 0px;
 }
 
 .inicio .titulo b{
@@ -58,6 +69,7 @@ color: black;
 .boton{
 text-align: center;
 margin: auto;
+padding-bottom: 10px
 }
 
 .boton a{
@@ -65,19 +77,21 @@ color: #3f1d84;
 padding: 0.3em 1%;
 background-color: white;
 border-radius: 0.2em;
-border: 0.1em solid white
+border: 0.1em solid white;
+transition: background-color .7s, border .7s;
+overflow: hidden;
 }
 
 .boton a:hover{
 color: white;
 background-color: #3f1d84;
-border: 0.1em solid white
+border-color:white
 }
 
 .contacto{
 display: flex;
-justify-content: center;
-align-items: center;
+justify-content: right;
+align-items: right;
 clear: left;
 }
 
@@ -106,8 +120,28 @@ vertical-align: middle;
 align-items: center;
 }
 
+.fotos{
+margin: auto;
+text-align: center;
+justify-content: center;
+display: flex;
+}
+
 .dibujo{
-width: 33%;
-margin-right: 0.333333333%;
+left: 10;
+display: inline-block;
+height: 19.5em;
+width: 19.5em;
 padding: 0px;
+overflow: hidden;
+}
+
+.dibujo img{
+object-fit: fill;
+outline: inherit;
+transition: all .4s;
+}
+
+.dibujo img:hover{
+transform: scale(1.1);
 }
