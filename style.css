@@ -1,7 +1,7 @@
 body{
 background-color: #3f1d84;
 font-family: arial;
-font-size: 16px;
+font-size: 1em;
 box-sizing: border-box;
 }
 
@@ -17,6 +17,7 @@ font-family: 'Yantramanav', sans-serif;
 .inicio{
 height: auto;
 background: url('Recursos/fondo.jpg');
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -28,11 +29,11 @@ background-color: #212121
 
 .titulo{
 font-family: 'Yantramanav', sans-serif;
-letter-spacing: -2px;
+letter-spacing: -0.08em;
 clear: left;
 text-align: center;
 font-weight: 500;
-border-radius: 20px;
+border-radius: 1.25em;
 }
 
 .titulo span{
@@ -52,7 +53,7 @@ align-content: center;
 width: 40.625em;
 max-width: 90%;
 margin: auto;
-padding: 1px 0px;
+padding: 0.0625em 0px;
 }
 
 .inicio .titulo b{
@@ -69,7 +70,7 @@ color: black;
 .boton{
 text-align: center;
 margin: auto;
-padding-bottom: 10px
+padding-bottom: 0.625em;
 }
 
 .boton a{
