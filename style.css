@@ -7,6 +7,7 @@ box-sizing: border-box;
 
 hr{
 color: #d8dad5;
+margin-top: 1em;
 }
 
 .header{
@@ -20,11 +21,15 @@ background: url('Recursos/fondo.jpg');
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-size: cover;
+padding-top: 1em;
+padding-bottom: 5em;
 }
 
 .fondonegro{
 height: auto;
-background-color: #212121
+background-color: #212121;
+padding-bottom: 2em;
+padding-top: 1em;
 }
 
 .titulo{
@@ -70,22 +75,29 @@ color: black;
 .boton{
 text-align: center;
 margin: auto;
+padding-top: 1em;
 padding-bottom: 0.625em;
 }
 
 .boton a{
 color: #3f1d84;
 padding: 0.3em 1%;
-background-color: white;
+background: white;
 border-radius: 0.2em;
 border: 0.1em solid white;
-transition: background-color .7s, border .7s;
+transition: all .7s;
 overflow: hidden;
+display: block;
+text-align: center;
+width: 25em;
+margin: 0.5em auto;
+margin-bottom: 0px;
+max-width: 90%;
 }
 
 .boton a:hover{
 color: white;
-background-color: #3f1d84;
+background: #3f1d84;
 border-color:white
 }
 
@@ -118,6 +130,14 @@ font-family: 'Yantramanav';
 text-align: center;
 }
 
+.contenido p{
+margin-bottom: 3em;
+}
+
+.contenido .nomargin{
+margin-bottom: 0em;
+}
+
 .contenido img{
 width: 30em;
 max-width:100%;
@@ -125,28 +145,25 @@ vertical-align: middle;
 align-items: center;
 }
 
-.fotos{
-margin: auto;
-text-align: center;
-justify-content: center;
-display: flex;
+.dibujos{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(19.5em, 1fr));
+grid-template-rows: repeat(auto-fill, 19.5em);
+background: #212121;
+height: auto;
+padding-bottom: 2em;
 }
 
-.dibujo{
-left: 10;
-display: inline-block;
+.dibujo__img-container{
 height: 19.5em;
-width: 19.5em;
-padding: 0px;
 overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-.dibujo img{
-object-fit: fill;
-outline: inherit;
-transition: all .4s;
-}
-
-.dibujo img:hover{
-transform: scale(1.1);
+.dibujo__img{
+width: 19.5em;
+object-fit: cover;
+vertical-align: middle;
 }

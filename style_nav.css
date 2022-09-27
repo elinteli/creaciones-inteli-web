@@ -42,7 +42,7 @@ height: 4.5em;
   display: none;
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 45em) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -50,7 +50,7 @@ height: 4.5em;
   }
 }
 
-@media screen and (max-width: 37.5em) {
+@media screen and (max-width: 45em) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
