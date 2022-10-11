@@ -9,6 +9,10 @@ background-color: #d8dad5;
 height: 4.5em;
 }
 
+.topnav a:first-child i{
+margin-right: 10px;
+color: #212121;
+}
 
 .topnav {
   clear: left;
