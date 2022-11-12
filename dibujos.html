@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -16,30 +16,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&family=Yantramanav:wght@300;400&display=swap" rel="stylesheet">
     <title>Dibujos - El Inteli</title>
 
-<script type="text/javascript">
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
   </head>
   <body>
     <header class="header">
       <a href="index.html"><img src="Recursos/El Inteli.png" alt="El Inteli"></a>
     </header>
-    <nav class="topnav" id="myTopnav">
+    <nav class="nav" id="Nav">
       <a href="index.html"><i class="fa fa-home"></i>Inicio</a>
       <a href="pedidos.html">Pedidos</a>
       <a href="dibujos.html" class="active">Dibujos</a>
       <a href="https://juegos-inteli.itch.io/" target="_blank">Juegos</a>
         <a href="faq.html">Preguntas Frecuentes</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="AbrirCerrarResponsiveNav()">
+          <i id="iconomobilenav" class="fa-solid fa-bars"></i>
         </a>
     </nav>
 
@@ -83,5 +72,6 @@ function myFunction() {
 <a href="mailto:creaciones.inteli@gmail.com" target="_blank"><i class="contacto__icon fa-solid fa-envelope"></i></a>
 </div>
 </footer>
+<script src="script.js"> </script>
   </body>
 </html>

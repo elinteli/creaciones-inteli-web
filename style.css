@@ -1,3 +1,10 @@
+:root {
+    --width: 200px;
+    --height: 30px;
+    --width__small: 300px;
+    --width__large: 220px;
+    }
+
 body{
 background-color: #3f1d84;
 font-family: arial;
@@ -72,6 +79,10 @@ text-decoration: none;
 color: black;
 }
 
+.label__small{
+    font-size: 10px;
+}
+
 .boton{
 text-align: center;
 margin: auto;
@@ -94,6 +105,40 @@ margin: 0.5em auto;
 margin-bottom: 0px;
 max-width: 90%;
 }
+
+.input__boton {
+color: #999;
+padding: 0.3em 1%;
+background: #212121;
+border-radius: 0.2em;
+border: 0.1em solid #999;
+transition: all .2s;
+overflow: hidden;
+text-align: center;
+margin: 0.5em auto;
+margin-bottom: 0px;
+max-width: 90%;
+}
+
+.input__file {
+    color: #999;
+    padding: 0.3em 1%;
+    background: #212121;
+    border-radius: 0.2em;
+    border: 0.1em solid #999;
+    transition: all .2s;
+    overflow: hidden;
+    text-align: center;
+    margin: 0.5em auto;
+    margin-bottom: 0px;
+    max-width: 90%;
+    }
+
+.input__boton:hover{
+    color: #d8dad5;
+    background: #3f1d84;
+    border-color: #d8dad5;
+    }
 
 .boton a:hover{
 color: white;
@@ -167,3 +212,5 @@ width: 19.5em;
 object-fit: cover;
 vertical-align: middle;
 }
+
+

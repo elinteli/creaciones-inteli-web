@@ -7,20 +7,22 @@ background-color: #d8dad5;
 
 .header{
 height: 4.5em;
+border-top-right-radius: 3px;
+border-top-left-radius: 20px;
 }
 
-.topnav a:first-child i{
+.nav a:first-child i{
 margin-right: 10px;
 color: #212121;
 }
 
-.topnav {
+.nav {
   clear: left;
   overflow: hidden;
   background-color: #d8dad5;
 }
 
-.topnav a {
+.nav a {
   font-family: 'Yantramanav';
   float: left;
   display: block;
@@ -33,35 +35,43 @@ color: #212121;
   transition: .3s;
 }
 
-.topnav a:hover {
+.nav a:hover {
   color: black;
   background-color: #8c8d8a;
+  border-radius: 2px;
 }
 
-.topnav a.active {
+.nav a.active {
    text-decoration: underline;
 }
 
-.topnav .icon {
+.nav .icon {
   display: none;
 }
 
 @media screen and (max-width: 45em) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
+  .nav a:not(:first-child) {
+    display: none;
+  }
+
+  .nav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 45em) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
+  .nav.responsive {
+    position: relative;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  .nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.responsive a {
+  .nav.responsive a {
     float: none;
     display: block;
     text-align: left;
