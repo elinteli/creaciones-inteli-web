@@ -10,3 +10,10 @@ function AbrirCerrarResponsiveNav() {
 
     }
 }
+
+function CerrarResponsiveNav(){
+  let Nav = document.getElementById("Nav");
+  let IconMobileNav = document.getElementById("iconomobilenav");
+  Nav.className = "nav";
+  IconMobileNav.className = "fa-solid fa-bars";
+}

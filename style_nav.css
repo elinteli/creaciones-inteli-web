@@ -5,7 +5,7 @@ color: #251e23;
 
 .nav {
   clear: left;
-  overflow: hidden;
+  overflow: visible;
   background-color: #283293;
   position: sticky;
   top: 0px;
@@ -29,7 +29,7 @@ top: 20px;
   font-family: 'Yantramanav';
   display: inline;
   text-align: center;
-  padding: 0.875em 1em;
+  padding: 0.875em 16px;
   text-decoration: none;
   font-size: 1.0625em;
   color: white;
@@ -76,14 +76,13 @@ top: 20px;
     text-align: left;
     position: static;
     background-color: #232788;
+    width: calc(100vw - 16px);
+    padding-right: 0px;
   }
   .nav.responsive .alinarderecha{
-    position: relative;
-    top: 30px;
+    position: absolute;
+    top: 93px;
     left: 0px;
     }
 
-  .nav.responsive{
-    height: 326px;
-  }
 }
