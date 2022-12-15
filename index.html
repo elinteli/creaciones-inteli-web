@@ -17,14 +17,14 @@
   </head>
   <body>
     <nav class="nav" id="Nav">
-      <a class="imgicono" href="index.html"><img src="Recursos/El Inteli blanco.png" alt="El Inteli"></a>
-      <div class="alinarderecha">
+      <a class="imgicono" href="index.html"><img id="elinteliimg" src="Recursos/El Inteli blanco.png" alt="El Inteli"></a>
       <a href="javascript:void(0);" class="icon" onclick="AbrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
-      <a href="index.html" class="active">INICIO</a>
-      <a href="#dibujos">DIBUJOS</a>
-      <a href="#pedidos">PEDIDOS</a>
-      <a href="#preguntasfrecuentes">PREGUNTAS FRECUENTES</a>
-      <a href="https://juegos-inteli.itch.io/" target="_blank">JUEGOS</a>
+      <div class="alinarderecha">
+      <a href="index.html" class="active linknav">INICIO</a>
+      <a href="#dibujos" class="linknav">DIBUJOS</a>
+      <a href="#pedidos" class="linknav">PEDIDOS</a>
+      <a href="#preguntasfrecuentes" class="linknav">PREGUNTAS FRECUENTES</a>
+      <a href="https://juegos-inteli.itch.io/" target="_blank" class="linknav">JUEGOS</a>
     </div>
     </nav>
     <div class="marco-efecto" id="inicio">
@@ -99,7 +99,7 @@
       <p>2 Personas o más: 6,50 Dolares / 260 Pesos Uruguayos</p><br>
       <form id="formulario" action="https://formsubmit.co/creaciones.inteli@gmail.com" method="POST" enctype="multipart/form-data">
         <h4>Completar Orden de Pedido:</h4>
-        <input type="hidden" name="_next" value="https://elinteli.github.io/">
+        <input type="hidden" name="_next" value="pedido.html">
         <input class="input" type="text" placeholder="Escribe tu nombre *" name="Nombre" required><br><br>
         <input class="input" type="email" placeholder="Escribe tu Email *" name="Email" required><br><br>
         <label for="">¡Subí la imagen que quieras que ilustre! *</label><br>
@@ -131,7 +131,7 @@
 <p>El plazo de entrega suele rondar la semana desde que se encargó el pedido.</p><br>
 
 <h4>¿Por dónde los puedo contactar?</h4>
-<p>Nos puedes contactar por <a style="color: #77f;" href="https://www.instagram.com/creaciones_inteli/" target="_blank">Instagram</a> o por via <a style="color: #77f;" href="mailto:creaciones.inteli@gmail.com" target="_blank">Mail</a>.</p>
+<p>Nos puedes contactar por <a style="color: #77f;" href="https://www.instagram.com/creaciones_inteli/" target="_blank">Instagram</a> <span style="color: #888; font-weight: 400;">(@creaciones_inteli)</span> o por via <a style="color: #77f;" href="mailto:creaciones.inteli@gmail.com" target="_blank">Mail</a> <span style="color: #888; font-weight: 400;">(creaciones.inteli@gmail.com)</span>.</p>
   </div>
 </div>
 <footer>

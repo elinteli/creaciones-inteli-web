@@ -22,12 +22,12 @@ top: 17px;
 .alinarderecha{
 position: absolute;
 right: 15px;
+top: 20px;
 }
 
 .nav a{
   font-family: 'Yantramanav';
-  float: left;
-  display: block;
+  display: inline;
   text-align: center;
   padding: 0.875em 1em;
   text-decoration: none;
@@ -53,38 +53,37 @@ right: 15px;
 }
 
 @media screen and (max-width: 950px) {
-  .nav a:not(.imgicono) {
+  .nav .linknav{
     display: none;
   }
-  .nav a.icon {
+
+  .nav .icon:not(.iconmobilenav) {
     display: inline;
     position: absolute;
-    top: 41px;
+    top: 30px;
     right: 15px;
     background-color: #ccc;
     color: #251e23;
     padding: 5px 15px;
+    border-radius: 2px;
+    float: right;
   }
 }
 
 @media screen and (max-width: 950px) {
-
-  .nav.responsive .icon {
-    position: absolute;
-    top: 41px;
-    right: 15px;
-  }
-  .nav.responsive a {
-    float: none;
+  .nav.responsive .linknav {
     display: block;
     text-align: left;
+    position: static;
+    background-color: #232788;
   }
-  .nav.responsive a:last-child{
-    padding-bottom: 40px;
-  }
-
-  .nav .responsive img{
-    width: 200px;
-    margin-left: 50px;
+  .nav.responsive .alinarderecha{
+    position: relative;
+    top: 30px;
+    left: 0px;
     }
+
+  .nav.responsive{
+    height: 326px;
+  }
 }

@@ -25,6 +25,8 @@ margin-top: 1em;
 .nav img{
 width: 200px;
 margin-left: 50px;
+position: relative;
+top: 15px;
 }
 
 .inicio{
@@ -71,8 +73,10 @@ font-size: 20px;
 }
 
 span{
-color: #251e23;
-background: #fdd33d;
+/*color: #251e23;
+background: #fdd33d;*/
+font-weight: 900;
+color: #ddd;
 }
 
 .inicio .titulo{
@@ -115,7 +119,7 @@ text-align: center;
 margin: 0.5em auto;
 margin-bottom: 0px;
 color: #283293;
-background: #fff7;
+background: #fff;
 }
 
 .input__boton {
