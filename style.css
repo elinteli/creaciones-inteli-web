@@ -12,7 +12,7 @@ z-index: 10;
 }
 
 .marco-efecto{
-    background: url('Recursos/fondo2.jpg');
+    background: url('Recursos/fondo2_low.jpg');
     background-size: cover;
     padding-top: 5px;
 }
@@ -31,7 +31,7 @@ top: 15px;
 
 .inicio{
 height: auto;
-background: url('Recursos/fondo.jpg');
+background: url('Recursos/fondo_low.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 padding: 8em 0px;
