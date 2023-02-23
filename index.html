@@ -15,8 +15,8 @@
       gtag('config', 'G-68T92DYCQ6');
     </script>
 <script src="https://kit.fontawesome.com/cbef11d0c0.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style_nav.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style_nav.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="icon" type="icon/png" href="Recursos/icono.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,8 @@
 	<a href="index.html#dibujos" onclick="CerrarResponsiveNav()" class="linknav">DIBUJOS</a>
 	<a href="index.html#pedidos" onclick="CerrarResponsiveNav()" class="linknav">PEDIDOS</a>
 	<a href="index.html#preguntasfrecuentes" onclick="CerrarResponsiveNav()" class="linknav">PREGUNTAS FRECUENTES</a>
-	<a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav linknav-juegos">JUEGOS</a>
+	<a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav">JUEGOS</a>
+	<div class="fondo-azul-nav"></div>
 </div>
 </nav>
 <div class="marco-efecto" id="inicio">
@@ -85,13 +86,10 @@
 	<h3 id="pedidos">Encargos</h3>
 	<hr class="separador">
 </div>
-<div class="fondonegro">
 	<div class="contenido">
-		<div>
-			<h4>Ejemplo una ilustración personalizada:</h4>
-			<img title="¡Encargá el tuyo!" src="Recursos/ejemplo_pedido.png" alt="Ejemplo Pedido">
 			<div class="cuadro-texto">
-				<div>
+			<h4>Ejemplo de una ilustración personalizada:</h4>
+				<img title="¡Encargá el tuyo!" src="Recursos/ejemplo_pedido.png" alt="Ejemplo Pedido">
 					<p>
 						Encargá estas ilustraciones o retratos digitales personalizados hechos a partir de fotografías.<br>
 						 ¡Son perfectos para regalar a familiares y amigos!
@@ -99,9 +97,9 @@
 					<div class="boton">
 						<a href="#formulario">👉Encargar un dibujo</a>
 					</div>
-				</div>
 			</div>
-			<h4>Precios:</h4>
+			<br>
+			<h4>Precios</h4>
 			<p>
         		El valor de una ilustración para 1 persona* es de $5,13 Dólares o $199 Pesos Uruguayos.
       		</p>
@@ -112,19 +110,23 @@
         		El valor para 5 o más personas* es de $7,69 Dólares o $299 Pesos Uruguayos.
       		</p>
       		<p>
-				*También pueden ser mascotas o cualquier animal.<br>
-				Los precios están abiertos a negociaciones.
+				*También pueden ser mascotas o cualquier animal.
       		</p>
 			<br>
 			<form id="formulario" action="https://formsubmit.co/creaciones.inteli@gmail.com" method="POST" enctype="multipart/form-data">
-				<h4>Completar Orden de Pedido:</h4>
+				<div class="titulo">
+					<h3>Orden de Pedido</h3>
+					<hr class="separador">
+				</div>
 				<input type="hidden" name="_next" value="https://elinteli.github.io/pedido.html">
 				<input class="input" type="text" placeholder="Escribe tu nombre *" name="Nombre" required><br>
 				<br>
 				<input class="input" type="email" placeholder="Escribe tu Email *" name="Email" required><br>
 				<br>
+				<div class="contenedor-input-file">
 				<label for="">¡Subí la imagen que quieras que ilustre! *</label><br>
 				<input class="input__file" type="file" accept="image/png,image/jpeg" name="Imagen_Original" id="" required><br>
+				</div>
 				<br>
 				<input class="input" type="number" min="1" max="20" placeholder="¿Cuantas personas hay en la foto? *" name="Cantidad_de_personas" required><br>
 				<br>
@@ -137,17 +139,14 @@
         		</label><br><br>
 				<input class="input__boton" type="submit" value="Enviar">
 			</form>
-			<br>
-		</div>
+			<br><br>
 	</div>
-</div>
 <br>
 <br>
 <div class="titulo">
 	<h3 id="preguntasfrecuentes">Preguntas Frecuentes</h3>
 	<hr class="separador">
 </div>
-<div class="fondonegro">
 	<div class="contenido">
 		<h4>¿Qué hacen?</h4>
 		<p>
@@ -156,7 +155,7 @@
 		<br>
     <h4>¿Qué formato tienen las ilustraciones?</h4>
 		<p>
-			Estas ilustraciones son digitales y una vez realizadas le llegaran a su Email en una alta resolución como un archivo PNG(.png).
+			Estas ilustraciones son digitales y una vez realizadas le llegaran a su Email en una alta resolución como un archivo PNG.
 		</p>
 		<br>
 		<h4>¿Cuánto salen?</h4>
@@ -173,7 +172,7 @@
     <ul>
 			<li>Podés enviarme un Email con tu pedido <a href="mailto:creaciones.inteli@gmail.com">👉Enviar Email</a>.</li>
       <li>Podés escribirme por instagram que fotografía queres que ilustre <a href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank">👉Enviar Mensaje</a>.</li>
-      <li>Podés rellenar el formulario en la sección de "Completar Orden de Pedido" <a href="#formulario">👉Rellenar Formulario</a>.</li>
+      <li>Podés rellenar el formulario en la sección de "Orden de Pedido" <a href="#formulario">👉Rellenar Formulario</a>.</li>
     </ul>
 		<br>
 		<h4>¿Cuánto puede demorar una ilustración?</h4>
@@ -183,17 +182,17 @@
 		<br>
 		<h4>¿Por dónde los puedo contactar?</h4>
 		<p>
-			Podés enviar un mensaje a nuestro <a href="https://www.instagram.com/creaciones_inteli/" target="_blank">Instagram</a><span class="spangris">(@creaciones_inteli)</span> o a nuestro <a href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank">Email</a><span class="spangris">(creaciones.inteli@gmail.com)</span>.
+			Podés enviar un mensaje a nuestro <a title="@creaciones_inteli" href="https://www.instagram.com/creaciones_inteli/" target="_blank">Instagram</a> o a nuestro <a title="creaciones.inteli@gmail.com" href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank">Email</a>.
 		</p>
 	</div>
-</div>
 <footer>
-<div class="contacto">
-	<a href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-instagram"></i></a>
-	<a href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-solid fa-envelope"></i></a>
-	<a href="https://inteligames.itch.io/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-itch-io"></i></a>
-</div>
+	<div class="contacto">
+		<a title="Instagram" href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-instagram"></i></a>
+		<a title="Email" href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-solid fa-envelope"></i></a>
+		<a title="Itch.io" href="https://inteligames.itch.io/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-itch-io"></i></a>
+		<a title="Youtube" href="https://www.youtube.com/@inteligames" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-youtube"></i></a>
+	</div>
 </footer>
-<script src="script.js"> </script>
+<script src="js/script.js"></script>
 </body>
 </html>
