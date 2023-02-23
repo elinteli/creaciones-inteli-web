@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<meta name="robots" content="noindex">
+<meta name="robots" content="index">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-68T92DYCQ6"></script>
 <script>
@@ -15,11 +15,11 @@
 <script src="https://kit.fontawesome.com/cbef11d0c0.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style_nav.css">
 <link rel="stylesheet" href="style.css">
-<link rel="icon" type="icon/png" href="Recursos/icono.png">
+<link rel="icon" type="icon/png" href="Recursos/icono-games.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<title>Ilustraciones Personalizadas - El Inteli</title>
+<title>Inteli Games - Juegos y Herramientas</title>
 </head>
 <body>
 <nav class="nav" id="Nav">
@@ -30,27 +30,44 @@
 	<a href="index.html#dibujos" onclick="CerrarResponsiveNav()" class="linknav">DIBUJOS</a>
 	<a href="index.html#pedidos" onclick="CerrarResponsiveNav()" class="linknav">PEDIDOS</a>
 	<a href="index.html#preguntasfrecuentes" onclick="CerrarResponsiveNav()" class="linknav">PREGUNTAS FRECUENTES</a>
-	<a href="https://juegos-inteli.itch.io/" onclick="CerrarResponsiveNav()" rel="noopener" rel="noreferrer" target="_blank" class="linknav linknav-juegos">JUEGOS</a>
+	<a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav linknav-juegos">JUEGOS</a>
 </div>
 </nav>
-<br>
-<div class="titulo">
-	<h3>Orden de Pedido</h3>
-	<hr class="separador">
-</div>
-<div class="fondonegro">
+<br><br><br><br>
+<div class="fondoblanco">
+	<div class="titulo" style="background-color: #5779d8; margin: 0px;">
+		<br>
+		<h3>Juegos y Herramientas</h3>
+		<hr class="separador">
+		<br>
+	</div>
 	<div class="contenido">
-		<p style="margin: 5px; color: #aaa;">
-			Gracias por completar la orden de pedido.
-		</p>
-		<p style="margin: 5px; color: #aaa;">
-			En breves te llegará un <span> Email para coordinar el pago del pedido </span>.
-		</p>
-		<p style="margin: 5px; color: #aaa;">
-			El dibujo estará listo en <span>aproximadamente 1 semana </span> después de confirmar el pago.
-		</p>
-		<div class="boton">
-			<a href="index.html">↩️ Regresar al inicio</a>
+		<img style="width: 100%;" src="Recursos/inteli-games-banner.png" alt="banner_inteli_games">
+		<div class="container-juegos">
+		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Bola 8/index.html')">
+		<div class="hover-juegos">Bola 8</div>
+		<img src="Juegos/Bola 8/img/icono.png" alt="icono_Bola_Ocho">
+		</a>
+		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
+			<div class="hover-juegos">Auto y Gato</div>
+			<img src="Juegos/Auto y Gato/img/icono.png" alt="icono_Auto_y_Gato">
+		</a>
+		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Letras Fugitivas/img/proximamente.png')">
+			<div class="hover-juegos">Letras Fugitivas</div>
+			<img src="Juegos/Letras Fugitivas/img/icono.png" alt="icono_Letras_fugitivas">
+		</a>
+		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Inteli Dice/index.html')">
+			<div class="hover-juegos">Inteli Dice</div>
+			<img src="Juegos/Inteli Dice/img/icono.png" alt="icono_Inteli_Dice">
+		</a>
+		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Anotador Truco/index.html')">
+			<div class="hover-juegos">Anotador Truco Uruguayo</div>
+			<img src="Juegos/Anotador Truco/img/icono.png" alt="icono_Anotador_Truco">
+		</a>
+</div>
+<br>
+<iframe id="iframe" src=""></iframe>
+<div class="herramientas-juegos"><a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()"><i class="fa-solid fa-maximize"></i></a></div>
 		</div>
 	</div>
 </div>
@@ -61,6 +78,6 @@
 	<a href="https://juegos-inteli.itch.io/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-itch-io"></i></a>
 </div>
 </footer>
-<script src="script.js"> </script>
+<script src="script.js"></script>
 </body>
 </html>

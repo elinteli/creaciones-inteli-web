@@ -10,6 +10,7 @@ body {
 	z-index:10;
 }
 .marco-efecto {
+	margin-top: 74px;
 	background:url('Recursos/fondo2_low.jpg');
 	background-size:cover;
 	padding-top:5px;
@@ -19,10 +20,10 @@ hr {
 	margin-top:1em;
 }
 .nav img {
-	width:200px;
-	margin-left:50px;
+	width: 160px;
+	margin-left:20px;
 	position:relative;
-	top:15px;
+	top: 12px;
 }
 .inicio {
 	height:auto;
@@ -42,6 +43,21 @@ hr {
 	margin-left:1%;
 	margin-right:1%;
 }
+
+.fondoblanco {
+	height:auto;
+	background: url(./Recursos/fondo-juegos.png);
+	background-size: 200px;
+	margin-left:1%;
+	margin-right:1%;
+}
+
+.fondoblanco .contenido{
+	backdrop-filter: blur(10px);
+	padding-bottom:2em;
+	padding-top:1em;
+}
+
 .titulo {
 	letter-spacing:-0.08em;
 	clear:left;
@@ -167,6 +183,7 @@ a {
 	box-shadow:0px 0px 0px 0.1em rgba(216,218,213,0.5);
 	transform:translate(0px,-0.3em)
 }
+
 .contenido {
 	color:#d8dad5;
 	text-align:center;
@@ -245,16 +262,72 @@ li{
 .cuadro-texto p {
 	margin-bottom:5px;
 }
-:target::before {
-	content:" ";
-	display:block;
-	height:100px;
-	margin:-100px 0 0;
-	/* altura negativa de la cabecera fija */
+
+.container-juegos{
+	padding: 2%;
 }
+
+.boton-play {
+	display: inline-block;
+	border-radius: 30%;
+	width: 160px;
+	height: 160px;
+	margin: 10px;
+}
+
+.boton-play img{
+	border-radius: 30%;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-juegos{
+	position: absolute;
+	height: 160px;
+	width: 160px;
+	transition: .5s ease;
+	display: flex;
+	align-items:end;
+	justify-content: center;
+	opacity: 0;
+	color: #fff;
+	font-weight: bolder;
+	border-radius: 30%;
+	box-shadow: inset #0004 0px -20px 20px 0px;
+	font-size: 17px;
+}
+
+.boton-play:hover .hover-juegos{
+	opacity: 1;
+}
+
+.boton-play:hover{
+	box-shadow: #0004 0px 12px 12px 0px;
+}
+
+iframe{
+	display: none;
+	margin: 0px;
+	border: none;
+}
+
+#boton-fullscreen{
+	display: none;
+	color: #ccc;
+	font-size:30px;
+}
+
+.herramientas-juegos{
+	display: inline-block;
+	background-color: #303991;
+	width: 854px;
+	margin: 0px;
+}
+
 @media screen and (max-width:950px ) {
 	.nav img {
-		margin-left: 0px;
+			width: 190px;
+			top: 15px;
 	}
 }
 @media screen and (max-width:650px ) {
