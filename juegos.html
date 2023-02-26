@@ -44,30 +44,30 @@
 	</div>
 	<div class="contenido">
 		<div class="container-juegos">
-		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Bola 8/index.html')">
+		<a class="boton-play" href="#" onclick="setiframe('./Juegos/Bola 8/index.html')">
 		<div class="hover-juegos">Bola 8</div>
 		<img src="Juegos/Bola 8/img/icono.png" alt="icono_Bola_Ocho">
 		</a>
-		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
+		<a id="juego-ayg-boton" class="boton-play" href="#" onclick="setiframe('https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
 			<div class="hover-juegos">Auto y Gato</div>
 			<img src="Juegos/Auto y Gato/img/icono.png" alt="icono_Auto_y_Gato">
 		</a>
-		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Letras Fugitivas/img/proximamente.png')">
+		<a class="boton-play" href="#" onclick="setiframe('./Juegos/Letras Fugitivas/img/proximamente.png')">
 			<div class="hover-juegos">Letras Fugitivas</div>
 			<img src="Juegos/Letras Fugitivas/img/icono.png" alt="icono_Letras_fugitivas">
 		</a>
-		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Inteli Dice/index.html')">
+		<a class="boton-play" href="#" onclick="setiframe('./Juegos/Inteli Dice/index.html')">
 			<div class="hover-juegos">Inteli Dice</div>
 			<img src="Juegos/Inteli Dice/img/icono.png" alt="icono_Inteli_Dice">
 		</a>
-		<a class="boton-play" href="#" onclick="setiframe('854px', '480px', './Juegos/Anotador Truco/index.html')">
+		<a class="boton-play" href="#" onclick="setiframe('./Juegos/Anotador Truco/index.html')">
 			<div class="hover-juegos">Anotador Truco Uruguayo</div>
 			<img src="Juegos/Anotador Truco/img/icono.png" alt="icono_Anotador_Truco">
 		</a>
 </div>
 <br>
 <iframe id="iframe" src=""></iframe>
-<div class="herramientas-juegos"><a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()"><i class="fa-solid fa-maximize"></i></a></div>
+<div id="contenedor-full-screen" class="herramientas-juegos"><a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()"><i class="fa-solid fa-maximize"></i></a></div>
 		</div>
 	</div>
 </div>
