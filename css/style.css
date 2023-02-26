@@ -9,6 +9,7 @@ body {
 	box-sizing:border-box;
 	z-index:10;
 	overflow-x: hidden;
+	width: 100vw;
 }
 .marco-efecto {
 	margin-top: 74px;
