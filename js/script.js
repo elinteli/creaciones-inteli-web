@@ -22,13 +22,27 @@ function CerrarResponsiveNav(){
   IconMobileNav.className = "fa-solid fa-bars";
 }
 
-function setiframe(ancho, altura, source){
+function setiframe(source) {
 let iframe = document.getElementById("iframe");
 let fullscreenBoton = document.getElementById("boton-fullscreen");
-iframe.setAttribute("src", source);
+
+if (window.innerWidth < 950) {
+  iframe.style.width = "330px";
+  iframe.style.height = "600px";
+  document.getElementById("contenedor-full-screen").style.width = "330px";
+} else {
+  iframe.style.width = "855px";
+  iframe.style.height = "480px";
+}
+
+if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html'){
+  iframe.setAttribute("src", "Juegos/nomobile.html");
+}
+else{
+  iframe.setAttribute("src", source);
+}
+
 iframe.style.display = "inline-block";
-iframe.style.width = ancho;
-iframe.style.height = altura;
 fullscreenBoton.style.display = "inline-block";
 }
 
