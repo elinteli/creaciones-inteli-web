@@ -30,16 +30,19 @@ if (window.innerWidth < 950) {
   iframe.style.width = "330px";
   iframe.style.height = "600px";
   document.getElementById("contenedor-full-screen").style.width = "330px";
+  
+  if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html'){
+  iframe.setAttribute("src", "Juegos/nomobile.html");
+}
+  else{
+  iframe.setAttribute("src", source);
+}
+
 } else {
   iframe.style.width = "855px";
   iframe.style.height = "480px";
-}
-
-if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html'){
-  iframe.setAttribute("src", "Juegos/nomobile.html");
-}
-else{
   iframe.setAttribute("src", source);
+  document.getElementById("contenedor-full-screen").style = "";
 }
 
 iframe.style.display = "inline-block";
