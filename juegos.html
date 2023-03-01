@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
-<meta name="robots" content="index">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-68T92DYCQ6"></script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-68T92DYCQ6');
-    </script>
-<script src="https://kit.fontawesome.com/cbef11d0c0.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style_nav.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" type="icon/png" href="Recursos/icono-games.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<title>Inteli Games - Juegos y Herramientas</title>
-</head>
-<body>
-<nav class="nav" id="Nav">
-<a class="imgicono" href="index.html"><img id="elinteliimg" src="Recursos/El Inteli blanco.png" alt="El Inteli"></a>
-<a href="javascript:void(0);" class="icon" onclick="AbrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
-<div class="alinarderecha">
-	<a href="index.html" onclick="CerrarResponsiveNav()" class="active linknav">INICIO</a>
-	<a href="index.html#dibujos" onclick="CerrarResponsiveNav()" class="linknav">DIBUJOS</a>
-	<a href="index.html#pedidos" onclick="CerrarResponsiveNav()" class="linknav">PEDIDOS</a>
-	<a href="index.html#preguntasfrecuentes" onclick="CerrarResponsiveNav()" class="linknav">PREGUNTAS FRECUENTES</a>
-	<a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav">JUEGOS</a>
-	<div class="fondo-azul-nav"></div>
-</div>
-</nav>
-<br><br><br><br>
-<div class="fondoceleste">
-	<div class="titulo">
-		<br>
-		<h3>Inteli Games</h3>
-		<hr class="separador">
-		<br>
-	</div>
-	<div class="contenido">
-		<div class="container-juegos">
-		<a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Bola 8/index.html')">
-		<div class="hover-juegos">Bola 8</div>
-		<img src="Juegos/Bola 8/img/icono.png" alt="icono_Bola_Ocho">
-		</a>
-		<a id="juego-ayg-boton" class="boton-play" href="#iframe" onclick="setiframe('https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
-			<div class="hover-juegos">Auto y Gato</div>
-			<img src="Juegos/Auto y Gato/img/icono.png" alt="icono_Auto_y_Gato">
-		</a>
-		<a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/proximamente.html')">
-			<div class="hover-juegos">Letras Fugitivas</div>
-			<img src="Juegos/Letras Fugitivas/img/icono.png" alt="icono_Letras_fugitivas">
-		</a>
-		<a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Inteli Dice/index.html')">
-			<div class="hover-juegos">Inteli Dice</div>
-			<img src="Juegos/Inteli Dice/img/icono.png" alt="icono_Inteli_Dice">
-		</a>
-		<a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Anotador Truco/index.html')">
-			<div class="hover-juegos">Anotador Truco Uruguayo</div>
-			<img src="Juegos/Anotador Truco/img/icono.png" alt="icono_Anotador_Truco">
-		</a>
-</div>
-<br>
-<iframe id="iframe" src=""></iframe>
-<div id="contenedor-full-screen" class="herramientas-juegos"><a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()"><i class="fa-solid fa-maximize"></i></a></div>
-		</div>
-	</div>
-</div>
-<footer>
-	<div class="contacto">
-		<a title="Instagram" href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-instagram"></i></a>
-		<a title="Email" href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-solid fa-envelope"></i></a>
-		<a title="Itch.io" href="https://inteligames.itch.io/" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-itch-io"></i></a>
-		<a title="Youtube" href="https://www.youtube.com/@inteligames" rel="noopener" rel="noreferrer" target="_blank"><i class="contacto__icon fa-brands fa-youtube"></i></a>
-	</div>
-</footer>
-<script src="js/script.js"></script>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="robots" content="index" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-68T92DYCQ6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-68T92DYCQ6");
+        </script>
+        <script src="https://kit.fontawesome.com/cbef11d0c0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style_nav.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="icon" type="icon/png" href="Recursos/icono-games.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Roboto+Condensed&display=swap" rel="stylesheet" />
+        <title>Inteli Games - Juegos y Herramientas</title>
+    </head>
+    <body>
+        <nav class="nav" id="Nav">
+            <a class="imgicono" href="index.html"><img id="elinteliimg" src="Recursos/El Inteli blanco.png" alt="El Inteli" /></a>
+            <a href="javascript:void(0);" class="icon" onclick="AbrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
+            <div class="alinarderecha">
+                <a href="index.html" onclick="CerrarResponsiveNav()" class="active linknav">INICIO</a>
+                <a href="index.html#dibujos" onclick="CerrarResponsiveNav()" class="linknav">DIBUJOS</a>
+                <a href="index.html#pedidos" onclick="CerrarResponsiveNav()" class="linknav">PEDIDOS</a>
+                <a href="index.html#preguntasfrecuentes" onclick="CerrarResponsiveNav()" class="linknav">PREGUNTAS FRECUENTES</a>
+                <a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav">JUEGOS</a>
+                <div class="fondo-azul-nav"></div>
+            </div>
+        </nav>
+        <br />
+        <br />
+        <br />
+        <div class="fondoceleste">
+            <div class="titulo">
+                <br />
+                <h3>Inteli Games</h3>
+                <hr class="separador" />
+                <br />
+            </div>
+            <div class="contenido">
+                <div class="container-juegos">
+                    <a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Bola 8/index.html')">
+                        <div class="hover-juegos">Bola 8</div>
+                        <img src="Juegos/Bola 8/img/icono.png" alt="icono_Bola_Ocho" />
+                    </a>
+                    <a id="juego-ayg-boton" class="boton-play" href="#iframe" onclick="setiframe('https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
+                        <div class="hover-juegos">Auto y Gato</div>
+                        <img src="Juegos/Auto y Gato/img/icono.png" alt="icono_Auto_y_Gato" />
+                    </a>
+                    <a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/proximamente.html')">
+                        <div class="hover-juegos">Letras Fugitivas</div>
+                        <img src="Juegos/Letras Fugitivas/img/icono.png" alt="icono_Letras_fugitivas" />
+                    </a>
+                    <a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Inteli Dice/index.html')">
+                        <div class="hover-juegos">Inteli Dice</div>
+                        <img src="Juegos/Inteli Dice/img/icono.png" alt="icono_Inteli_Dice" />
+                    </a>
+                    <a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/Anotador Truco/index.html')">
+                        <div class="hover-juegos">Anotador Truco Uruguayo</div>
+                        <img src="Juegos/Anotador Truco/img/icono.png" alt="icono_Anotador_Truco" />
+                    </a>
+                </div>
+                <br />
+                <iframe id="iframe" src=""></iframe>
+                <div id="contenedor-full-screen" class="herramientas-juegos">
+                    <a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()">
+                        <i class="fa-solid fa-maximize"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="contacto">
+				<a title="Instagram" href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank">
+					<i class="contacto-icon fa-brands fa-instagram"></i>
+				</a>
+                <a title="Email" href="mailto:creaciones.inteli@gmail.com" rel="noopener" rel="noreferrer" target="_blank">
+					<i class="contacto-icon fa-solid fa-envelope"></i>
+				</a>
+                <a title="Itch.io" href="https://inteligames.itch.io/" rel="noopener" rel="noreferrer" target="_blank">
+					<i class="contacto-icon fa-brands fa-itch-io"></i>
+				</a>
+                <a title="Youtube" href="https://www.youtube.com/@inteligames" rel="noopener" rel="noreferrer" target="_blank">
+					<i class="contacto-icon fa-brands fa-youtube"></i>
+				</a>    
+			</div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>
