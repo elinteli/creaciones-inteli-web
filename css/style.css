@@ -258,7 +258,8 @@ a {
     font-family: "Heebo", sans-serif;
     width: 500px;
     height: 100px;
-    resize: none;
+    resize: vertical;
+    max-height: 300px;
 }
 ul {
     text-align: left;
