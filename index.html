@@ -22,32 +22,31 @@
         <link rel="icon" type="icon/png" href="Recursos/icono.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;800&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
         <title>Ilustraciones Personalizadas - El Inteli</title>
     </head>
     <body>
         <nav class="nav" id="Nav">
-            <a class="imgicono" href="index.html"><img id="elinteliimg" src="Recursos/El Inteli blanco.png" alt="El Inteli"/></a>
+            <h1><a class="imgicono" href="index.html"><img id="elinteliimg" src="Recursos/El Inteli blanco.png" alt="El Inteli"/></a></h1>
             <a href="javascript:void(0);" class="icon" onclick="AbrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
             <div class="alinarderecha">
-                <a href="index.html" onclick="CerrarResponsiveNav()" class="active linknav">INICIO</a>
-                <a href="index.html#dibujos" onclick="CerrarResponsiveNav()" class="linknav">DIBUJOS</a>
-                <a href="index.html#pedidos" onclick="CerrarResponsiveNav()" class="linknav">PEDIDOS</a>
-                <a href="index.html#preguntasfrecuentes" onclick="CerrarResponsiveNav()" class="linknav">PREGUNTAS FRECUENTES</a>
-                <a href="juegos.html" onclick="CerrarResponsiveNav()" class="linknav">JUEGOS</a>
-                <div class="fondo-azul-nav"></div>
+                <a href="index.html" class="active linknav">INICIO</a>
+                <a href="index.html#dibujos" class="linknav">DIBUJOS</a>
+                <a href="index.html#pedidos" class="linknav">PEDIDOS</a>
+                <a href="index.html#preguntasfrecuentes" class="linknav">PREGUNTAS FRECUENTES</a>
+                <a href="juegos.html" class="linknav">JUEGOS</a>
+                <div class="fondo-nav"></div>
             </div>
         </nav>
+        <div class="body">
         <div class="marco-efecto" id="inicio">
-            <br/>
             <div class="inicio">
                 <div class="titulo">
-                    <h1>el inteli</h1>
-                    <h2>ilustraciones personalizadas</h2>
+                    <h2>Ilustraciones<br>Personalizadas</h2>
+                    <div class="boton">
+                        <a href="#formulario">Encargar una ilustración</a>
+                    </div>
                 </div>
-            </div>
-            <div class="boton">
-                <a href="#formulario">👉Encargar una ilustración</a>
             </div>
             <br/>
         </div>
@@ -75,9 +74,6 @@
                 <img class="dibujo-img" title="Dibujo de Perro Golden" src="Recursos/golden.png" alt="Dibujo Golden"/>
             </div>
             <div class="dibujo-img-contenedor">
-                <img class="dibujo-img" title="Dibujo de @Soymar98" src="Recursos/soymar98.png" alt="Dibujo soymar98"/>
-            </div>
-            <div class="dibujo-img-contenedor">
                 <img class="dibujo-img" title="Dibujo de Perro Corgi" src="Recursos/corgi.png" alt="Dibujo Corgi"/>
             </div>
         </div>
@@ -97,7 +93,7 @@
                     ¡Son perfectos para regalar a familiares y amigos!
                 </p>
                 <div class="boton">
-                    <a href="#formulario">👉Encargar un dibujo</a>
+                    <a href="#formulario">Encargar un dibujo</a>
                 </div>
             </div>
             <br/>
@@ -176,9 +172,9 @@
             <br/>
             <h4>¿Cómo encargo una ilustración perzonalizada?</h4>
             <ul>
-                <li>Podés enviarme un Email con tu pedido <a href="mailto:creaciones.inteli@gmail.com">👉Enviar Email</a>.</li>
-                <li>Podés escribirme por instagram que fotografía queres que ilustre <a href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank">👉Enviar Mensaje</a>.</li>
-                <li>Podés rellenar el formulario en la sección de "Orden de Pedido" <a href="#formulario">👉Rellenar Formulario</a>.</li>
+                <li>Podés enviarme un Email con tu pedido <a href="mailto:creaciones.inteli@gmail.com">Enviar Email</a>.</li>
+                <li>Podés escribirme por instagram que fotografía queres que ilustre <a href="https://www.instagram.com/creaciones_inteli/" rel="noopener" rel="noreferrer" target="_blank">Enviar Mensaje</a>.</li>
+                <li>Podés rellenar el formulario en la sección de "Orden de Pedido" <a href="#formulario">Rellenar Formulario</a>.</li>
             </ul>
             <br/>
             <h4>¿Cuánto puede demorar una ilustración?</h4>
@@ -208,6 +204,7 @@
 				</a>
             </div>
         </footer>
+    </div>
         <script src="js/script.js"></script>
     </body>
 </html>
