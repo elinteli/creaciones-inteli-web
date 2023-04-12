@@ -6,14 +6,14 @@
 .nav {
 	clear:left;
 	overflow:visible;
-	background-color:#283293;
 	position: fixed;
 	top: 0px;
 	z-index: 9000;
 	padding:7px 0px;
 	height:60px;
 	width: 100vw;
-	transition: top .4s;
+	background: rgb(48,57,145);
+    background: linear-gradient(90deg, rgba(48,57,145,1) 0%, rgba(54,65,70,1) 100%);
 }
 
 .nav a:not(.imgicono) {
@@ -73,23 +73,24 @@
 	}
 
 	.nav.responsive .linknav, .nav.responsive .fondo-azul-nav{
-		display:block;
-		text-align:left;
-		background-color:#232788;
-		width:calc(100vw - 16px);
-		padding-right: 100%;
+		display: block;
+		background: rgb(52,63,92);
+		background: linear-gradient(90deg, rgba(52,63,92,1) 0%, rgba(54,65,70,1) 100%);
 		z-index: 1200;
-		font-size: 3vh;
-		border-bottom: 2px solid #363988;
-	}
-
-	.nav.responsive .fondo-azul-nav{
-		padding-bottom: 100vh;
+		font-size: 4vw;
 	}
 
 	.nav.responsive .alinarderecha {
+		display: grid;
+		width: 30%;
+		grid-template-rows: 1fr;
 		position:absolute;
 		top: 85px;
-		left: 0px;
+		right: 0px;
+	}
+	.nav.responsive .fondo-nav{
+		background: rgb(52,63,92);
+		background: linear-gradient(90deg, rgba(52,63,92,1) 0%, rgba(54,65,70,1) 100%);
+		height: 100vh;
 	}
 }

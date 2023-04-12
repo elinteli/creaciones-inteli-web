@@ -10,11 +10,19 @@ body {
     z-index: 10;
     overflow-x: hidden;
 }
+.body{
+    position: fixed;
+    top: 74px;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
 .marco-efecto {
-    margin-top: 74px;
-    background: url("../Recursos/fondo2_low.jpg");
+    background: rgb(48,57,145);
+    background: linear-gradient(90deg, rgba(48,57,145,1) 0%, rgba(54,65,70,1) 100%);
     background-size: cover;
-    padding-top: 5px;
+    padding-bottom: 7%;
+    padding-top: 10px;
 }
 hr {
     color: #999;
@@ -31,11 +39,10 @@ hr {
     background: url("../Recursos/fondo_low.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     padding: 8em 0px;
-    max-width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 20px;
 }
 .fondonegro {
     height: auto;
@@ -65,6 +72,7 @@ hr {
     font-weight: 900;
     margin-bottom: 20px;
     font-size: 20px;
+    padding-top: 10px;
 }
 .titulo h3 {
     color: #fff;
@@ -98,25 +106,17 @@ span {
     align-content: center;
     width: 40.625em;
     max-width: 90%;
-    margin: auto;
+    margin-left: 10%;
     padding: 0.0625em 0px;
     letter-spacing: 0.04px;
-}
-.inicio .titulo h1 {
-    color: #fff;
-    font-size: 48px;
-    font-family: "Norwester", "Roboto Condensed", sans-serif;
-    filter: drop-shadow(0px 0px 5px #000);
-    -webkit-text-stroke: 1px #fff;
-    font-weight: normal;
+    text-align: left;
 }
 .inicio .titulo h2 {
     color: #fff;
-    font-size: 32px;
-    font-family: "Norwester", "Roboto Condensed", sans-serif;
-    filter: drop-shadow(0px 0px 5px #000);
-    -webkit-text-stroke: 1px #fff;
-    font-weight: normal;
+    font-size: 40px;
+    font-family: "Heebo", sans-serif;
+    filter: drop-shadow(0px 0px 5px #000a);
+    font-weight: 600;
 }
 a {
     text-decoration: none;
@@ -125,22 +125,25 @@ a {
 .label-small {
     font-size: 13px;
 }
+.inicio .boton{
+    filter: drop-shadow(0px 0px 5px #0008);
+}
 .boton {
-    text-align: center;
     margin: auto;
     padding-top: 1em;
     padding-bottom: 0.625em;
 }
 .boton a {
-    padding: 0.3em 1%;
-    border-radius: 0.2em;
+    padding: 0.3em 3%;
+    border-radius: 20px;
     overflow: hidden;
     display: inline;
     text-align: center;
     margin: 0.5em auto;
     margin-bottom: 0px;
-    color: #283293;
+    color: #364146;
     background: #fff;
+    font-weight: normal;
 }
 .input-boton {
     color: #999;
@@ -176,8 +179,7 @@ a {
     border-color: #ccc;
 }
 .boton a:hover {
-    color: #283293;
-    background: #fffb;
+    background: #ffffffe9;
 }
 .contacto {
     display: flex;
@@ -270,13 +272,13 @@ li {
 }
 .cuadro-texto {
     background-color: #303991;
-    border-radius: 10px;
     padding: 15px 10px;
     width: 700px;
     max-width: 80vw;
     margin: auto;
     margin-top: 10px;
     border: 3px solid #fff;
+    border-image: linear-gradient(130deg, rgb(255, 255, 255) 0%, rgb(171, 87, 149) 100%) 1;
 }
 .cuadro-texto p {
     margin-bottom: 5px;
@@ -348,7 +350,10 @@ iframe {
     .nav img {
         width: 190px;
         top: 15px;
-    }
+    }	
+    .body{
+		top: 94px;
+	}
 }
 @media screen and (max-width: 650px) {
     .dibujos-contenedor {
