@@ -1,15 +1,3 @@
-let prevScrollpos = window.pageYOffset;
-
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("Nav").style.top = "0";
-    } else {
-      document.getElementById("Nav").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-  }
-
 function AbrirCerrarResponsiveNav() {
     let Nav = document.getElementById("Nav");
     let IconMobileNav = document.getElementById("iconomobilenav");
@@ -20,14 +8,6 @@ function AbrirCerrarResponsiveNav() {
       Nav.className = "nav";
       IconMobileNav.className = "fa-solid fa-bars";
     }
-}
-
-function CerrarResponsiveNav(){
-  let Nav = document.getElementById("Nav");
-  let IconMobileNav = document.getElementById("iconomobilenav");
-  Nav.className = "nav";
-  IconMobileNav.className = "fa-solid fa-bars";
-  document.getElementById("Nav").style.top = "-100px";
 }
 
 function setiframe(source) {
