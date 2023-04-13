@@ -44,6 +44,7 @@
 .nav .imgicono:hover {
 	background-color:transparent;
 	border-radius:0px;
+	color: #fff;
 }
 .nav .icon {
 	display:none;
