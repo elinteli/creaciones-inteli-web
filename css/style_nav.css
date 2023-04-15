@@ -14,6 +14,7 @@
 	width: 100vw;
 	background: rgb(48,57,145);
     background: linear-gradient(90deg, rgba(48,57,145,1) 0%, rgba(54,65,70,1) 100%);
+	transition: top .3s;
 }
 
 .nav a:not(.imgicono) {
