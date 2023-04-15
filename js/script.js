@@ -1,4 +1,17 @@
-function AbrirCerrarResponsiveNav() {
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("Nav").style.top = "0";
+    } else {
+      document.getElementById("Nav").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+function abrirCerrarResponsiveNav() {
+  if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
     let Nav = document.getElementById("Nav");
     let IconMobileNav = document.getElementById("iconomobilenav");
     if (Nav.className === "nav") {
@@ -8,6 +21,12 @@ function AbrirCerrarResponsiveNav() {
       Nav.className = "nav";
       IconMobileNav.className = "fa-solid fa-bars";
     }
+  }
+}
+
+function ocultarNav() {
+  document.getElementById("Nav").style.top = "-100px";
+  abrirCerrarResponsiveNav();
 }
 
 function setiframe(source) {
