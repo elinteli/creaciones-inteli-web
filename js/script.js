@@ -3,29 +3,29 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-      document.getElementById("Nav").style.top = "0";
+      document.getElementById("nav").style.top = "0";
     } else {
-      document.getElementById("Nav").style.top = "-100px";
+      document.getElementById("nav").style.top = "-200vh";
     }
     prevScrollpos = currentScrollPos;
   }
 
 function abrirCerrarResponsiveNav() {
   if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
-    let Nav = document.getElementById("Nav");
-    let IconMobileNav = document.getElementById("iconomobilenav");
-    if (Nav.className === "nav") {
-      Nav.className += " responsive";
-      IconMobileNav.className = "fa-solid fa-x";
+    let nav = document.getElementById("nav");
+    let iIconoMenu = document.getElementById("icono-menu");
+    if (nav.className === "nav") {
+      nav.className += " responsive";
+      iIconoMenu.className = "fa-solid fa-x";
     } else {
-      Nav.className = "nav";
-      IconMobileNav.className = "fa-solid fa-bars";
+      nav.className = "nav";
+      iIconoMenu.className = "fa-solid fa-bars";
     }
   }
 }
 
-function ocultarNav() {
-  document.getElementById("Nav").style.top = "-100px";
+function ocultarnav() {
+  document.getElementById("nav").style.top = "-200vh";
   abrirCerrarResponsiveNav();
 }
 
@@ -38,7 +38,7 @@ if (window.innerWidth < 950) {
   iframe.style.height = "600px";
   document.getElementById("contenedor-full-screen").style.width = "330px";
   
-  if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html'){
+  if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7978846/index.html'){
   iframe.setAttribute("src", "Juegos/nomobile.html");
 }
   else{
