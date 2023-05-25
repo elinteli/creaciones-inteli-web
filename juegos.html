@@ -24,24 +24,20 @@
         <title>Inteli Games - Juegos y Herramientas</title>
     </head>
     <body>
-        <nav class="nav" id="Nav">
-            <a class="imgicono" href="juegos.html"><img src="Juegos/logo-inteli-games.png" alt="Inteli Games"><h1 id="inteligameslogo">Inteli Games</h1></a>
-            <a href="javascript:void(0);" class="icon" onclick="abrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
+        <nav class="nav" id="nav">
+            <a class="contenedor-h1" href="juegos.html"><h1 id="logotipo-games">Inteli Games</h1></a><br>
+            <a href="javascript:void(0);" class="icon" onclick="abrirCerrarResponsiveNav()"><i id="icono-menu" class="fa-solid fa-bars"></i></a>
             <div class="alinarderecha">
-                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="active linknav">INICIO</a>
-                <a href="https://elinteli.github.io/#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="linknav">DIBUJOS</a>
-                <a href="https://elinteli.github.io/#pedidos" onclick="setTimeout(ocultarNav, 1000);" class="linknav">PEDIDOS</a>
-                <a href="https://elinteli.github.io/#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="linknav">PREGUNTAS FRECUENTES</a>
-                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="linknav">JUEGOS</a>
+                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="active link-interno-nav">INICIO</a>
+                <a href="https://elinteli.github.io/#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">DIBUJOS</a>
+                <a href="https://elinteli.github.io/#pedidos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PEDIDOS</a>
+                <a href="https://elinteli.github.io/#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PREGUNTAS FRECUENTES</a>
+                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">JUEGOS</a>
                 <div class="fondo-nav"></div>
             </div>
         </nav>
-        <br />
-        <br />
-        <br />
-        <div class="fondoazul">
-            <div class="contenido">
-                <div class="container-juegos">
+        <br><br><br><br>
+        <div class="contenedor-inteli-games">
                     <a class="boton-play" href="#iframe" onclick="setiframe('./Juegos/proximamente.html')">
                         <div class="hover-juegos">Letras Fugitivas</div>
                         <img src="Juegos/Letras Fugitivas/img/banner.png" alt="icono_Letras_fugitivas" />
@@ -54,12 +50,11 @@
                         <div class="hover-juegos">Bola 8</div>
                         <img src="Juegos/Bola 8/img/banner.png" alt="icono_Bola_Ocho" />
                     </a>
-                    <a id="juego-ayg-boton" class="boton-play" href="#iframe" onclick="setiframe('https://v6p9d9t4.ssl.hwcdn.net/html/7405244/index.html')">
+                    <a id="juego-ayg-boton" class="boton-play" href="#iframe" onclick="setiframe('https://v6p9d9t4.ssl.hwcdn.net/html/7978846/index.html')">
                         <div class="hover-juegos">Auto y Gato</div>
                         <img src="Juegos/Auto y Gato/img/banner.png" alt="icono_Auto_y_Gato" />
                     </a>
-                </div>
-                <br />
+                <br>
                 <iframe id="iframe" src=""></iframe>
                 <div id="contenedor-full-screen" class="herramientas-juegos">
                     <a id="boton-fullscreen" href="javascript:void(0);" onclick="fullscreen()">

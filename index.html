@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, user-scalable=no"/>
-        <meta name="keywords" content="ilustraciones, personalizados, digital, regalo, El Inteli"/>
+        <meta name="keywords" content="ilustraciones, personalizados, digital, regalo, Creaciones Inteli"/>
         <meta name="description" content="¡Encargá estas ilustraciones personalizadas para darle un regalo original y creativo a tus familiares y amigos!"/>
         <meta name="author" content="Eli Fainerman"/>
         <!-- Google tag (gtag.js) -->
@@ -22,24 +22,24 @@
         <link rel="icon" type="icon/png" href="Recursos/icono.png"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
-        <title>Ilustraciones Personalizadas - El Inteli</title>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;800&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet"/>
+        <title>Ilustraciones Personalizadas - Inteli</title>
     </head>
     <body>
-        <nav class="nav" id="Nav">
-            <a class="imgicono" href="https://elinteli.github.io/"><h1 id="elintelilogo">El Inteli</h1></a>
-            <a href="javascript:void(0);" class="icon" onclick="abrirCerrarResponsiveNav()"><i id="iconomobilenav" class="fa-solid fa-bars"></i></a>
+        <nav class="nav" id="nav">
+            <a class="contenedor-h1" href="https://elinteli.github.io/"><h1 id="logotipo-creaciones">Creaciones Inteli</h1></a>
+            <a href="javascript:void(0);" class="icon" onclick="abrirCerrarResponsiveNav()"><i id="icono-menu" class="fa-solid fa-bars"></i></a>
             <div class="alinarderecha">
-                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="active linknav">INICIO</a>
-                <a href="#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="linknav">DIBUJOS</a>
-                <a href="#pedidos" onclick="setTimeout(ocultarNav, 1000);" class="linknav">PEDIDOS</a>
-                <a href="#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="linknav">PREGUNTAS FRECUENTES</a>
-                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="linknav">JUEGOS</a>
+                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="active link-interno-nav">INICIO</a>
+                <a href="#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">DIBUJOS</a>
+                <a href="#pedidos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PEDIDOS</a>
+                <a href="#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PREGUNTAS FRECUENTES</a>
+                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">JUEGOS</a>
                 <div class="fondo-nav"></div>
             </div>
         </nav>
         <div class="body">
-        <div class="marco-efecto" id="inicio">
+        <div class="contenedor-portada-inicio" id="inicio">
             <div class="inicio">
                 <div class="titulo">
                     <h2>Ilustraciones<br>Personalizadas</h2>
@@ -117,27 +117,27 @@
                     <hr class="separador"/>
                 </div>
                 <input type="hidden" name="_next" value="https://elinteli.github.io/pedido.html"/>
-                <input class="input" type="text" placeholder="Escribe tu nombre *" name="Nombre" required/><br/>
+                <input autocomplete="on" class="input" type="text" placeholder="Escribe tu nombre *" name="Nombre" required/><br/>
                 <br/>
-                <input class="input" type="email" placeholder="Escribe tu Email *" name="Email" required/><br/>
+                <input autocomplete="on" class="input" type="email" placeholder="Escribe tu Email *" name="Email" required/><br/>
                 <br/>
                 <div class="contenedor-input-file">
-                    <label for="">¡Subí la imagen que quieras que ilustre! *</label><br/>
-                    <input class="input-file" type="file" accept="image/png,image/jpeg" name="Imagen_Original" id="" required/><br/>
+                    <label for="Imagen_Original">¡Subí la imagen que quieras que ilustre! *</label><br/>
+                    <input class="input-file" type="file" accept="image/png,image/jpeg" name="Imagen_Original" id="Imagen_Original" required/><br/>
                 </div>
                 <br/>
-                <input class="input" type="number" min="1" max="20" placeholder="¿Cuantas personas hay en la foto? *" name="Cantidad_de_personas" required/><br/>
+                <input  class="input" type="number" min="1" max="20" placeholder="¿Cuantas personas y/o animales hay en la foto? *" name="Cantidad_de_personas" required/><br/>
                 <br/>
                 <textarea class="input textarea" name="Mensaje" id="" cols="30" rows="10" placeholder="Escribe algo que me quieras decir..."></textarea><br/>
                 <br/>
-                <label class="label-small" for="">
+                <label for="submit-button" class="label-small">
                     El pago se coordinará por vía Email. <br/>
                     Las ilustraciones son en formato digital. <br/>
                     Las ilustraciones pueden demorar hasta 1 semana desde el momento del pago.
                 </label>
                 <br/>
                 <br/>
-                <input class="input-boton" type="submit" value="Enviar"/>
+                <input id="submit-button" class="input-boton" type="submit" value="Enviar"/>
             </form>
             <br/>
             <br/>
