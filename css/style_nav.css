@@ -10,72 +10,89 @@
 	top: 0px;
 	z-index: 9000;
 	padding:7px 0px;
-	height:80px;
+	height: 125px;
 	width: 100vw;
-	background: rgb(48,57,145);
-    background: linear-gradient(90deg, rgba(48,57,145,1) 0%, rgba(54,65,70,1) 100%);
+    background: #ddd;
 	transition: top .3s;
+	text-align: center;
 }
 
-.nav a:not(.imgicono) {
+.nav a:not(.contenedor-h1) {
 	position:relative;
 	top: 7px;
+	color:#1e1e27;
+	border: 1px solid #1e1e27;
+	border-radius: 0.7em;
+	padding: 0.5em 1em;
 }
-.alinarderecha {
-	position:absolute;
-	right:15px;
-	top:20px;
-}
+
 .nav a {
 	font-family:'Yantramanav';
 	display:inline;
 	text-align:center;
-	padding:0.875em 16px;
 	text-decoration:none;
-	font-size:1.0625em;
-	color:white;
+	font-size:1.1em;
+	color:#1e1e27;
 	font-weight:400;
 	font-family:'Roboto Condensed',sans-serif;
-}
-.nav a:hover {
-	color:black;
-	border-radius:2px;
-}
-
-.nav .imgicono:hover {
-	background-color:transparent;
-	border-radius:0px;
-	color: #fff;
 }
 .nav .icon {
 	display:none;
 }
+.nav img {
+    width: 160px;
+    margin-left: 20px;
+    position: relative;
+    top: 12px;
+}
+#logotipo-creaciones, #logotipo-games{
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+#logotipo-creaciones{
+    font-family: 'Norwester', 'Impact', sans-serif;
+}
+#logotipo-games{
+    font-family: 'Rubik';
+}
+.contenedor-h1{
+    padding: 0;
+}
 @media screen and (max-width:950px) {
-	.nav .linknav {
+	.nav{
+		text-align: left;
+		height: 80px;
+	}
+	.nav .link-interno-nav {
 		display:none;
 	}
-	.nav .icon:not(.iconmobilenav) {
+	.nav .icon:not(.icono-menu) {
 		display:inline;
 		position:absolute;
-		top:30px;
+		top:15px;
 		right:15px;
-		background-color:#ccc;
-		color:#251e23;
+		background-color:#1e1e27;
+		color:#eee;
 		padding:5px 15px;
 		border-radius:2px;
 		float:right;
 	}
 
-	.nav.responsive{
-		top: 0px !important;
-	}
-
-	.nav.responsive .linknav, .nav.responsive .fondo-azul-nav{
+	.nav.responsive .link-interno-nav, .nav.responsive .fondo-azul-nav{
 		display: block;
-		background: rgb(52,63,92);
-		background: linear-gradient(90deg, rgba(52,63,92,1) 0%, rgba(54,65,70,1) 100%);
+		background: #ddd;
 		z-index: 1200;
 		font-size: 4vw;
+		border-radius: 0;
+		border: none;
+		border-bottom: 2px solid #1e1e27;
+	}
+	.nav.responsive .link-interno-nav:first-child{
+		border-top: 2px solid #1e1e27;
 	}
 
 	.nav.responsive .alinarderecha {
@@ -83,12 +100,11 @@
 		width: 30%;
 		grid-template-rows: 1fr;
 		position:absolute;
-		top: 85px;
+		top: 87px;
 		right: 0px;
 	}
 	.nav.responsive .fondo-nav{
-		background: rgb(52,63,92);
-		background: linear-gradient(90deg, rgba(52,63,92,1) 0%, rgba(54,65,70,1) 100%);
+		background: #ddd;
 		height: 100vh;
 	}
 }

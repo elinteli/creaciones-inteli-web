@@ -10,78 +10,34 @@ body {
     z-index: 10;
     overflow-x: hidden;
 }
-.body{
-    margin-top: 74px;
-}
-.marco-efecto {
+.contenedor-portada-inicio {
     background: rgb(48,57,145);
     background: linear-gradient(90deg, rgba(48,57,145,1) 0%, rgba(54,65,70,1) 100%);
+    background: #1e1e27;
     background-size: cover;
-    padding-bottom: 7%;
-    padding-top: 10px;
+    padding-bottom: 4%;
+    padding-top: 141px;
 }
 hr {
     color: #999;
     margin-top: 1em;
-}
-.nav img {
-    width: 160px;
-    margin-left: 20px;
-    position: relative;
-    top: 12px;
-}
-#elintelilogo{
-    text-align: left;
-    margin-left: 20px;
-    font-family: 'Norwester';
-    font-weight: 400;
-    font-size: 50px;
-    position: absolute;
-    top: 15px;
-}
-#inteligameslogo{
-    text-align: left;
-    font-family: 'Rubik';
-    font-weight: 400;
-    font-size: 30px;
-    position: absolute;
-    top: 30px;
-    left: 100px;
-    color: #fff;
-}
-.imgicono img{
-    width: 80px;
-    position: absolute;
-    top: 0;
-    left:  0;
 }
 .inicio {
     height: auto;
     background: url("../Recursos/fondo_low.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8em 0px;
+    padding: 25vh 0px;
     max-width: 90%;
     margin: auto;
-    border-radius: 20px;
-}
-.fondonegro {
-    height: auto;
-    background-color: #251e23;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    margin-left: 1%;
-    margin-right: 1%;
 }
 
-.fondoazul {
+.contenedor-inteli-games {
     height: auto;
     background: #161a38;
-}
-
-.fondoazul .contenido {
     padding-bottom: 2em;
     padding-top: 3em;
+    text-align: center;
 }
 
 .titulo {
@@ -97,10 +53,6 @@ hr {
     color: #fff;
     font-size: 35px;
     margin: 10px;
-}
-.fondoazul .titulo {
-    background-color: #5779d8;
-    margin: 0px;
 }
 .subtitulo h4 {
     color: #384e8b;
@@ -134,8 +86,9 @@ span {
     color: #fff;
     font-size: 40px;
     font-family: "Heebo", sans-serif;
-    filter: drop-shadow(0px 0px 5px #000a);
     font-weight: 600;
+    display: inline-block;
+    filter: drop-shadow(0px 0px 5px #0008);
 }
 a {
     text-decoration: none;
@@ -151,6 +104,7 @@ a {
     margin: auto;
     padding-top: 1em;
     padding-bottom: 0.625em;
+    user-select: none;
 }
 .boton a {
     padding: 0.3em 3%;
@@ -256,9 +210,6 @@ a {
     width: 300px;
     object-position: center;
     margin: 0px;
-}
-.dibujo-img:hover {
-    box-shadow: #0004 0px 12px 12px 0px;
 }
 .input {
     font-family: "Heebo", sans-serif;
