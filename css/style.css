@@ -149,7 +149,8 @@ a {
 .input-boton:hover {
     color: #000;
     background: #ccc;
-    border-color: #ccc;
+    border: none;
+    padding: calc(8px + 0.1em) calc(20px + 0.1em);
 }
 .boton a:hover {
     background: #ffffffe9;
