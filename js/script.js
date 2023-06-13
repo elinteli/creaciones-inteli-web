@@ -1,15 +1,15 @@
 // jshint esversion: 6
-let prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.scrollY;
 
 window.onscroll = function() {
-  let currentScrollPos = window.pageXOffset;
+  let currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav").style.top = "0";
     } else {
       document.getElementById("nav").style.top = "-200vh";
     }
     prevScrollpos = currentScrollPos;
-  }
+  };
 
 function abrirCerrarResponsiveNav() {
   if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
