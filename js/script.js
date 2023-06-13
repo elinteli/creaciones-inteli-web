@@ -1,14 +1,15 @@
-let prevScrollpos = window.pageYOffset;
+// jshint esversion: 6
+let prevScrollpos = window.scrollY;
 
 window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
+  let currentScrollPos = window.scrollX;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav").style.top = "0";
     } else {
       document.getElementById("nav").style.top = "-200vh";
     }
     prevScrollpos = currentScrollPos;
-  }
+  };
 
 function abrirCerrarResponsiveNav() {
   if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
@@ -24,7 +25,7 @@ function abrirCerrarResponsiveNav() {
   }
 }
 
-function ocultarnav() {
+function ocultarNav() {
   document.getElementById("nav").style.top = "-200vh";
   abrirCerrarResponsiveNav();
 }
