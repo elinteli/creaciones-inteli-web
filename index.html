@@ -19,7 +19,7 @@
         <script src="https://kit.fontawesome.com/cbef11d0c0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style_nav.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="icon/png" href="Recursos/icono.png">
+        <link rel="icon" type="icon/png" href="Recursos/pastoraustraliano.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;800&family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
@@ -27,40 +27,35 @@
     </head>
     <body>
         <nav class="nav" id="nav">
-            <a class="contenedor-h1" href="https://elinteli.github.io/"><h1 id="logotipo-creaciones">Creaciones Inteli</h1></a>
+            <a class="contenedor-h1" href="https://elinteli.github.io/"><h1 id="logotipo-creaciones">creaciones inteli</h1></a>
             <a href="javascript:void(0);" class="icon" onclick="abrirCerrarResponsiveNav()"><i id="icono-menu" class="fa-solid fa-bars"></i></a>
             <div class="alinarderecha">
-                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="active link-interno-nav">INICIO</a>
-                <a href="#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">DIBUJOS</a>
-                <a href="#pedidos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PEDIDOS</a>
-                <a href="#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">PREGUNTAS FRECUENTES</a>
-                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">JUEGOS</a>
+                <a href="https://elinteli.github.io/" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Inicio</a>
+                <a href="#dibujos" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Dibujos</a>
+                <a href="#precio" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Precio</a>
+                <a href="#formulario" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Pedidos</a>
+                <a href="#preguntasfrecuentes" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Preguntas Frecuentes</a>
+                <a href="juegos.html" onclick="setTimeout(ocultarNav, 1000);" class="link-interno-nav">Juegos</a>
                 <div class="fondo-nav"></div>
             </div>
         </nav>
         <div class="body">
-        <div class="contenedor-portada-inicio" id="inicio">
             <div class="inicio">
                 <div class="titulo">
                     <h2>Ilustraciones<br>Personalizadas</h2>
                     <div class="boton">
-                        <a href="#formulario" onclick="setTimeout(ocultarNav, 1000);">Encargar una ilustración a partir de <b>$199</b></a>
+                        <a href="#formulario" onclick="setTimeout(ocultarNav, 1000);">Encargar una ilustración</a>
                     </div>
                 </div>
             </div>
             <br>
-        </div>
         <br>
         <br>
         <div class="titulo">
             <h3 id="dibujos">Dibujos</h3>
-            <hr class="separador">
         </div>
         <div class="dibujos-contenedor">
             <br>
-            <a href="Recursos/merlina.png" class="dibujo-img-contenedor">
-                <img class="dibujo-img" title="Dibujo de Merlina Addams" src="Recursos/merlina.png" alt="Dibujo Merlina Addams">
-            </a>
             <a href="Recursos/pastoraustraliano.png" class="dibujo-img-contenedor">
                 <img class="dibujo-img" title="Dibujo de Pastor Ovejero Australiano" src="Recursos/pastoraustraliano.png" alt="Dibujo Pastor Ovejero Australiano">
             </a>
@@ -73,50 +68,44 @@
             <a href="Recursos/golden.png" class="dibujo-img-contenedor">
                 <img class="dibujo-img" title="Dibujo de Perro Golden" src="Recursos/golden.png" alt="Dibujo Golden">
             </a>
-            <a href="Recursos/corgi.png" class="dibujo-img-contenedor">
-                <img class="dibujo-img" title="Dibujo de Perro Corgi" src="Recursos/corgi.png" alt="Dibujo Corgi">
-            </a>
         </div>
         <br>
         <br>
         <br>
         <div class="titulo">
-            <h3 id="pedidos">Encargos</h3>
-            <hr class="separador">
+            <h3 id="precio">Precio</h3>
         </div>
         <div class="contenido">
-            <div class="cuadro-texto">
-                <h4>Ejemplo de una ilustración personalizada:</h4>
-                <a href="Recursos/ejemplo_pedido.png"><img title="¡Encargá el tuyo!" src="Recursos/ejemplo_pedido.png" alt="Ejemplo Pedido"></a>
-                <p>
-                    Encargá estas ilustraciones o retratos digitales personalizados hechos a partir de fotografías.<br>
-                    ¡Son perfectos para regalar a familiares y amigos!
-                </p>
-                <div class="boton">
-                    <a href="#formulario" onclick="setTimeout(ocultarNav, 1000);">Encargar un dibujo</a>
-                </div>
-            </div>
-            <br>
-            <h4 id="precios">Precios</h4>
-            <p>
-                El valor de una ilustración para 1 persona* es de $5,13 Dólares o $199 Pesos Uruguayos.
-            </p>
-            <p>
-                El valor para 2 a 4 personas* es de $6,99 Dólares o $269 Pesos Uruguayos.
-            </p>
-            <p>
-                El valor para 5 o más personas* es de $7,69 Dólares o $299 Pesos Uruguayos.
-            </p>
-            <p>
-                *También pueden ser mascotas o cualquier animal.
-            </p>
-            <br>
+            <table class="table">
+                <thead>
+                    <th>Cantidad de Personas y/o Animales</th>
+                    <th>Precio en UYU</th>
+                    <th>Precio en USD</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>$ 270</td>
+                        <td>$ 7.00</td>
+                    </tr>
+                    <tr>
+                        <td>2 - 4</td>
+                        <td>$ 400</td>
+                        <td>$ 10.40</td>
+                    </tr>
+                    <tr>
+                        <td>4+</td>
+                        <td>$ 550</td>
+                        <td>$ 14.30</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
             <form id="formulario" action="https://formsubmit.co/creaciones.inteli@gmail.com" method="POST" enctype="multipart/form-data">
                 <div class="titulo">
                     <h3>Ordenar un Pedido</h3>
-                    <hr class="separador">
                     <div class="boton">
-                    <a href="#precios" onclick="setTimeout(ocultarNav, 1000);">Ver tabla de precios</a>
+                    <a href="#precio" onclick="setTimeout(ocultarNav, 1000);">Ver tabla de precios</a>
                     </div>
                 </div>
                 <input type="hidden" name="_next" value="https://elinteli.github.io/pedido.html">
@@ -149,7 +138,6 @@
         <br>
         <div class="titulo">
             <h3 id="preguntasfrecuentes">Preguntas Frecuentes</h3>
-            <hr class="separador">
         </div>
         <div class="contenido">
             <h4>¿Qué hacen?</h4>
