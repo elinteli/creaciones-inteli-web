@@ -12,29 +12,24 @@
 	padding:7px 0px;
 	height: 125px;
 	width: 100vw;
-    background: #ddd;
-	transition: top .3s;
+    background: #fff;
 	text-align: center;
-}
-
-.nav a:not(.contenedor-h1) {
-	position:relative;
-	top: 7px;
-	color:#1e1e27;
-	border: 1px solid #1e1e27;
-	border-radius: 0.7em;
-	padding: 0.5em 1em;
+	box-shadow: 0 0 10px #0007;
+	margin: 0;
+	transition: top .4s;
 }
 
 .nav a {
-	font-family:'Yantramanav';
+	position:relative;
+	top: 7px;
+	padding: 12px;
 	display:inline;
 	text-align:center;
 	text-decoration:none;
-	font-size:1.1em;
+	font-size:16px;
 	color:#1e1e27;
 	font-weight:400;
-	font-family:'Roboto Condensed',sans-serif;
+	font-family:"Heebo", sans-serif;
 }
 .nav .icon {
 	display:none;
@@ -55,12 +50,19 @@
 }
 #logotipo-creaciones{
     font-family: 'Norwester', 'Impact', sans-serif;
+	background-color: #1e1e27;
+	color: #fff;
+	padding: 10px;
 }
-#logotipo-games{
-    font-family: 'Rubik';
+#logotipo-games{    
+	font-family: 'Rubik', 'Impact', sans-serif;
+	background-color: #1e1e27;
+	color: #fff;
+	padding: 10px;
 }
-.contenedor-h1{
-    padding: 0;
+.nav .contenedor-h1{
+    padding: 0;	
+	position:static;
 }
 @media screen and (max-width:950px) {
 	.nav{
@@ -70,41 +72,47 @@
 	.nav .link-interno-nav {
 		display:none;
 	}
-	.nav .icon:not(.icono-menu) {
+	.nav .icon {
 		display:inline;
 		position:absolute;
-		top:15px;
+		top:10px;
 		right:15px;
-		background-color:#1e1e27;
-		color:#eee;
-		padding:5px 15px;
-		border-radius:2px;
+		color:#1e1e27;
 		float:right;
+		font-size: 30px;
 	}
 
-	.nav.responsive .link-interno-nav, .nav.responsive .fondo-azul-nav{
+	.nav.responsive .link-interno-nav {
 		display: block;
-		background: #ddd;
+		background: #efefef;
 		z-index: 1200;
-		font-size: 4vw;
+		font-size: 6vw;
 		border-radius: 0;
 		border: none;
-		border-bottom: 2px solid #1e1e27;
-	}
-	.nav.responsive .link-interno-nav:first-child{
-		border-top: 2px solid #1e1e27;
+		padding: 20px 0;
 	}
 
 	.nav.responsive .alinarderecha {
+		background: #efefef;
 		display: grid;
-		width: 30%;
+		width: 80%;
 		grid-template-rows: 1fr;
 		position:absolute;
-		top: 87px;
-		right: 0px;
+		top: 94px;
+		right: 0;
+		box-shadow: -80vw 0 0 #0007;
+		animation: entrarResponsiveNav .5s 1;
+	}
+	@keyframes entrarResponsiveNav {
+		0% {
+			right: -60vw;
+		}
+		100% {
+			right: 0;
+		}
 	}
 	.nav.responsive .fondo-nav{
-		background: #ddd;
+		background: #fff;
 		height: 100vh;
 	}
 }
