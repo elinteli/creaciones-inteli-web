@@ -1,18 +1,19 @@
 // jshint esversion: 6
 let prevScrollpos = window.scrollY;
-
+let subiendo = false;
 window.onscroll = function() {
   let currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav").style.top = "0";
-    } else {
+    } 
+    else if (currentScrollPos > 100){
       document.getElementById("nav").style.top = "-200vh";
     }
     prevScrollpos = currentScrollPos;
   };
 
 function abrirCerrarResponsiveNav() {
-  if (screen.orientation.type === "portrait-primary" || screen.orientation.type === "portrait-secondary") {
+  if (screen.width <= 950) {
     let nav = document.getElementById("nav");
     let iIconoMenu = document.getElementById("icono-menu");
     if (nav.className === "nav") {
@@ -26,8 +27,11 @@ function abrirCerrarResponsiveNav() {
 }
 
 function ocultarNav() {
+  let nav = document.getElementById("nav");
+  let iIconoMenu = document.getElementById("icono-menu");
+  nav.className = "nav";
+  iIconoMenu.className = "fa-solid fa-bars";
   document.getElementById("nav").style.top = "-200vh";
-  abrirCerrarResponsiveNav();
 }
 
 function setiframe(source) {
