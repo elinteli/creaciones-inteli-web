@@ -1,12 +1,17 @@
 // jshint esversion: 6
+
+const nav = document.getElementById("nav");
+const iIconoMenu = document.getElementById("icono-menu");
 let prevScrollpos = window.scrollY;
-let subiendo = false;
+
 window.onscroll = function() {
   let currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("nav").style.top = "0";
     } 
     else if (currentScrollPos > 100){
+    nav.className = "nav";
+    iIconoMenu.className = "fa-solid fa-bars";
       document.getElementById("nav").style.top = "-200vh";
     }
     prevScrollpos = currentScrollPos;
@@ -14,8 +19,6 @@ window.onscroll = function() {
 
 function abrirCerrarResponsiveNav() {
   if (screen.width <= 950) {
-    let nav = document.getElementById("nav");
-    let iIconoMenu = document.getElementById("icono-menu");
     if (nav.className === "nav") {
       nav.className += " responsive";
       iIconoMenu.className = "fa-solid fa-x";
@@ -27,8 +30,6 @@ function abrirCerrarResponsiveNav() {
 }
 
 function ocultarNav() {
-  let nav = document.getElementById("nav");
-  let iIconoMenu = document.getElementById("icono-menu");
   nav.className = "nav";
   iIconoMenu.className = "fa-solid fa-bars";
   document.getElementById("nav").style.top = "-200vh";
