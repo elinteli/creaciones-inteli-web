@@ -34,35 +34,3 @@ function ocultarNav() {
   iIconoMenu.className = "fa-solid fa-bars";
   document.getElementById("nav").style.top = "-200vh";
 }
-
-function setiframe(source) {
-let iframe = document.getElementById("iframe");
-let fullscreenBoton = document.getElementById("boton-fullscreen");
-
-if (window.innerWidth < 950) {
-  iframe.style.width = "330px";
-  iframe.style.height = "600px";
-  document.getElementById("contenedor-full-screen").style.width = "330px";
-  
-  if (source == 'https://v6p9d9t4.ssl.hwcdn.net/html/7978846/index.html'){
-  iframe.setAttribute("src", "Juegos/nomobile.html");
-}
-  else{
-  iframe.setAttribute("src", source);
-}
-
-} else {
-  iframe.style.width = "855px";
-  iframe.style.height = "480px";
-  iframe.setAttribute("src", source);
-  document.getElementById("contenedor-full-screen").style = "";
-}
-
-iframe.style.display = "inline-block";
-fullscreenBoton.style.display = "inline-block";
-}
-
-function fullscreen(){
-let iframe = document.getElementById("iframe");
-iframe.requestFullscreen();
-}
