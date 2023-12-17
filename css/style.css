@@ -2,6 +2,9 @@
     margin: 0px;
     scroll-behavior: smooth;
 }
+a, input[type=checkbox], label {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+ }
 body {
     background-color: #fff;
     font-family: "Heebo", sans-serif;
@@ -326,6 +329,10 @@ th:first-child {
     width: 854px;
     margin: 0px;
 }
+.contenido .imagen-404 {
+    width: 200px;
+    border-radius: 50%;
+}
 @media screen and (max-width: 650px) {
     .dibujos-contenedor {
         padding: 2em 0px;
@@ -350,6 +357,13 @@ th:first-child {
     }
     #logotipo-creaciones {
         font-size: 9vw;
+    }
+    .contenido .imagen-404 {
+        width: 60vw;
+    }
+    .texto-imagen-404 {
+        padding: 0 10%;
+        display: flex;
     }
 }
 @font-face {
